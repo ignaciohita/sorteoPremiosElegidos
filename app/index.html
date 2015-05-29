@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Sorteo de Premios</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" DEVLIBRARY="true">
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body ng-app="SorteoPremios" ng-controller="PremioController">
+    <h1>Bienvenido al sorteo de premios</h1>
+
+    <div class="btn-group" dropdown is-open="status.isopen">
+        <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+            Button dropdown <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Viajes</a>
+            </li>
+            <li><a href="#">Motor</a>
+            </li>
+            <li><a href="#">Propiedades</a>
+            </li>
+        </ul>
+    </div>
+
+    <h3>¡Enhorabuena! ¡te ha tocado un {{premio}}!</h3>
+</body>
+
+</html>
